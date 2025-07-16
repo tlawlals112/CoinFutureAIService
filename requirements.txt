@@ -1,0 +1,59 @@
+# AI 자동 코인 선물 거래 시스템 - 의존성 패키지
+
+# 웹 프레임워크
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# 데이터베이스
+sqlalchemy==2.0.23
+# psycopg2-binary==2.9.9  # PostgreSQL - Windows에서는 제거
+alembic==1.12.1
+
+# Binance API
+python-binance==1.0.19
+ccxt==4.1.77
+
+# LLM API
+openai==1.3.7
+anthropic==0.7.8
+google-generativeai==0.3.2
+
+# 데이터 처리
+pandas==2.1.4
+numpy==1.25.2
+ta==0.10.2  # 기술적 지표
+
+# 메시징 및 캐싱
+redis==5.0.1
+celery==5.3.4
+
+# Telegram Bot
+python-telegram-bot==20.7
+
+# HTTP 클라이언트
+httpx==0.25.2
+requests==2.31.0
+aiohttp==3.9.1
+
+# 환경 변수 및 설정
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# 로깅 및 모니터링
+loguru==0.7.2
+prometheus-client==0.19.0
+
+# 테스트
+pytest==7.4.3
+pytest-asyncio==0.21.1
+
+# 개발 도구
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0
+
+# 기타 유틸리티
+python-dateutil==2.8.2
+pytz==2023.3
+websockets==12.0 

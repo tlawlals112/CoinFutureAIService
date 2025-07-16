@@ -1,0 +1,39 @@
+# AI 자동 코인 선물 거래 시스템 - 환경 변수 설정
+
+# 데이터베이스 설정
+DATABASE_URL=postgresql://username:password@localhost:5432/trading_db
+
+# Redis 설정
+REDIS_URL=redis://localhost:6379/0
+
+# Binance API 설정
+BINANCE_API_KEY=your_binance_api_key
+BINANCE_SECRET_KEY=your_binance_secret_key
+BINANCE_TESTNET=false  # true for testnet, false for mainnet
+
+# LLM API 설정
+OPENAI_API_KEY=your_openai_api_key
+ANTHROPIC_API_KEY=your_anthropic_api_key
+GOOGLE_API_KEY=your_google_api_key
+
+# Telegram Bot 설정
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+TELEGRAM_CHAT_ID=your_telegram_chat_id
+
+# 거래 설정
+MAX_POSITION_SIZE=0.1  # 총 자산의 10%
+MAX_DAILY_LOSS=0.02   # 일일 최대 손실 2%
+MAX_LEVERAGE=20        # 최대 레버리지 20배
+STOP_LOSS_PERCENTAGE=0.05  # 5% 손절매
+
+# 로깅 설정
+LOG_LEVEL=INFO
+LOG_FILE=logs/trading_system.log
+
+# 서버 설정
+HOST=0.0.0.0
+PORT=8000
+DEBUG=false
+
+# 모니터링 설정
+PROMETHEUS_PORT=9090 
